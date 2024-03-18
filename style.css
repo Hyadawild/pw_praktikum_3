@@ -2,20 +2,32 @@ body {
   margin: 0;
   padding: 0;
   font-family: sans-serif;
-  background-color: #e0f2fe;
+  background-color: #ebebeb;
   display: flex;
   min-height: 100vh;
   flex-direction: column;
 }
 
+.glow-text a {
+  color: #fff; /* White text color */
+  text-shadow: 0 0 50px rgba(255, 255, 255, 0.7),
+    /* Inner white glow */ 0 0 30px rgba(168, 42, 42, 0.4),
+    /* Outer white glow */ 0 0 40px rgba(30, 167, 167, 0.2); /* Optional blue outer glow */
+}
+
 header {
   padding: 50px;
+  margin: 0;
   width: 100%;
   display: flex;
   justify-content: space-between;
   align-items: center;
   background-color: #142d31;
   color: #fff;
+}
+
+.bg-primary {
+  background-color: rgb(62, 53, 73);
 }
 
 .logo {
